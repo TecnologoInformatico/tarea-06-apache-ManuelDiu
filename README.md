@@ -23,7 +23,35 @@ repositorio: `https://github.com/TecnologoInformatico/AdmInf-web.git`
 
 ```json
 {
-    "serverName": "",
-    "ip": ""
+    "serverName": "mdiu.tecnologoinformatico.com",
+    "ip": "144.22.200.74"
+}
+```
+
+
+3. `sudo apt install apache2`
+
+4. `mkdir -p /var/www/$ALUMNO`
+
+5. `sudo chown -R ubuntu mdiu/`
+
+6. 1. `cd /etc/apache2/sites-available`
+  2. `cp 000-default.conf ./mdiutest`
+
+7. 1. `cd /etc`
+  2. `sudo nano hosts`
+  3. `127.0.0.1       mdiu.tecnologoinformatico.com`
+
+8. `sudo systemctl reload apache2`
+
+9. `cp -r * /var/www/mdiu`
+
+10. Funciona! :)  (estaba más linda mi web minimalista "Manuel Diu's Server") ;D
+
+11. 
+```json
+{
+    "serverName": "mdiu.tecnologoinformatico.com",
+    "ip": "144.22.200.74"
 }
 ```
